@@ -1,1 +1,44 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #c71585;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(150px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cell {
+  background-color: #ffd1ec;
+  border: 2px solid #ff99cc;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  user-select: none;
+  position: relative;
+  opacity: 0.5;
+}
+
+.cell.enabled {
+  opacity: 1;
+}
+
+.cell.approved {
+  background-color: #f06292;
+  color: white;
+  border-color: #ec407a;
+}
 
